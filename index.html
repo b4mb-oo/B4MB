@@ -46,15 +46,23 @@
             <div class="header-container">
                 <ul>
                     <li>
-                        <img class="logo" src="./src/logo.png" alt="로고" />
+                        <!-- <img class="logo" src="./src/logo.svg" alt="로고" /> -->
+                        <script type="text/javascript">
+                            var imageURLs = ["./src/logo.svg", "./src/logo-2.svg", "./src/logo-3.svg", "./src/logo-4.svg"]; function getImageTag() { var img = '<img class="logo" src=\"'; var randomIndex = Math.floor(Math.random() * imageURLs.length); img += imageURLs[randomIndex]; img += '\" alt=\"LOGO\"/>'; return img; };
+                            document.write(getImageTag());</script>
                     </li>
                 </ul>
             </div>
         </header>
         <main class="mainContainer">
-            <div class="blur" style="width: 100%; height: 100%; position: fixed; top: 0; left: 0; display: flex; align-items: center; justify-content: center; z-index: 22; backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); -ms-backdrop-filter: blur(24px); background-color: rgba(255,255,255,0.25);">
-                <p style="font-size: 36px; font-weight: 900; color: blue; text-align: center;">B4MB, June</p>
-                
+            <div class="blur"
+                style="width: 100%; height: 100%; position: fixed; overflow: auto; top: 0; left: 0; align-items: center; justify-content: center; z-index: 22; backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); -ms-backdrop-filter: blur(24px); background-color: rgba(255,255,255,0.25);">
+
+                <div class="embedsocial-hashtag" data-ref="b5a4611b436091a8ee1c744dfee95efe0e33e22a" style="padding: 36px; padding-top: 128px;"><a
+                        class="feed-powered-by-es" href="https://embedsocial.com/products/embedfeed/" target="_blank"
+                        title="Powered by EmbedSocial">Powered by
+                        EmbedSocial<span>→</span></a></div>
+
             </div>
             <div class="intro-container">
                 <p class="title">B4MB Special Exclusive</p>
@@ -192,6 +200,8 @@
         </footer>
     </div>
 </body>
+
+<script>(function (d, s, id) { var js; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript"));</script>
 
 <!-- Swiper JS -->
 <script src="./javascript/swiper-bundle.min.js"></script>

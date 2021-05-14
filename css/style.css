@@ -144,7 +144,7 @@ textarea {
   width: 100%;
   max-width: 1080px;
   height: 100%;
-  padding-top: 30px;
+  padding-top: 36px;
   padding-bottom: 24px;
 }
 
@@ -166,6 +166,7 @@ textarea {
 .mainHeader > .header-container > ul > li > img.logo {
   width: 100px;
   object-fit: contain;
+  max-height: 48px;
 }
 
 /* 푸터 */
