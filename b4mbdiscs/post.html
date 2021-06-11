@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B4MB</title>
+    <title>B4MB Vinyls</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
         (function (d) {
@@ -20,9 +20,6 @@
 </head>
 
 <body>
-    <div class="notimodal">
-        해당 컨텐츠는 PC 환경에서 재생가능합니다.<br>PC로 접속 부탁드립니다.
-    </div>
     <div class="wrapper">
         <div class="adwrapper">
             <div class="ad miru">
@@ -188,19 +185,19 @@
     }
 
     .ad.miru {
-        background-image: url("./b4mbdiscs/miru.png");
+        background-image: url("./miru.png");
     }
 
     .ad.curvesign {
-        background-image: url("./b4mbdiscs/curvesign.png");
+        background-image: url("./curvesign.png");
     }
 
     .ad.moon {
-        background-image: url("./b4mbdiscs/moon.png");
+        background-image: url("./moon.png");
     }
 
     .ad.dny {
-        background-image: url("./b4mbdiscs/dny.png");
+        background-image: url("./dny.png");
     }
 
 
@@ -300,25 +297,7 @@
         /* transition: color 0.2s linear; */
     }
 
-    .notimodal {
-        display: none;
-    }
-
     @media (max-width: 640px) {
-
-        .notimodal {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            background-color: rgba(0,0,0,0.95);
-            backdrop-filter: blur(100px);
-            -webkit-backdrop-filter: blur(100px);
-            z-index: 9999999999;
-            text-align: center;
-        }
 
         body {
             overflow: auto;
