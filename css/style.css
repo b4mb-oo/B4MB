@@ -124,6 +124,10 @@ textarea {
   /* background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); */
 }
 
+.mainHeader.dark {
+  filter: invert(1);
+}
+
 .mainHeader::after {
   content: " ";
   display: inline-block;
@@ -133,11 +137,11 @@ textarea {
   top: 0;
   left: 0;
   z-index: -1;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to Bottom,
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
-  );
+  ); */
 }
 
 .mainHeader > .header-container {

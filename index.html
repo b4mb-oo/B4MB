@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
     <title>B4MB</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="apple-touch-icon-precomposed" sizes="300x300" href="./src/square-logo.png" />
+    <meta property="og:url" content="https://www.b4mb.ooo">
+    <meta property="og:title" content="B4MB Special Access">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./src/square-logo.png">
+    <meta property="og:description" content="특별한 사람들을 위해 준비했습니다.">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
     <script>
         (function (d) {
             var config = {
@@ -20,499 +41,220 @@
 </head>
 
 <body>
-    <div class="notimodal">
-        해당 컨텐츠는 PC 환경에서 재생가능합니다.<br>PC로 접속 부탁드립니다.
-    </div>
-    <div class="wrapper">
-        <a href="https://instagram.com/leemiru">
-            <div class="adwrapper">
-                <div class="ad miru">
-                    <div class="layer light"></div>
-                    <div class="layer light light-2"></div>
-                    <!-- <div class="layer layer-1"></div>
-                <div class="layer layer-2"></div>
-                <div class="layer layer-3"></div> -->
-                </div>
-                <p class="me">leemiru</p>
+    <div class="mainWrap">
+        <header class="mainHeader dark">
+            <div class="header-container">
+                <ul>
+                    <li>
+                        <!-- <img class="logo" src="./src/logo.svg" alt="로고" /> -->
+                        <script type="text/javascript">
+                            var imageURLs = ["./src/logo.svg", "./src/logo-2.svg", "./src/logo-3.svg", "./src/logo-4.svg"]; function getImageTag() { var img = '<img class="logo" src=\"'; var randomIndex = Math.floor(Math.random() * imageURLs.length); img += imageURLs[randomIndex]; img += '\" alt=\"LOGO\"/>'; return img; };
+                            document.write(getImageTag());</script>
+                    </li>
+                </ul>
             </div>
-        </a>
-
-        <a href="https://instagram.com/curvesign">
-            <div class="adwrapper">
-                <div class="ad curvesign">
-                    <div class="layer light"></div>
-                    <div class="layer light light-2"></div>
-                    <!-- <div class="layer layer-1"></div>
-                <div class="layer layer-2"></div>
-                <div class="layer layer-3"></div> -->
-                </div>
-                <p class="me">curvesign</p>
+        </header>
+        <main class="mainContainer">
+            <div class="intro-container">
+                <p class="title">B4MB Special Exclusive</p>
+                <p class="text" style="margin-top: 16px; font-size: 14px;">
+                    환영합니다.<br>
+                    본 페이지는 B4MB 공식 관계자로부터<br><b style="font-weight: 800;">Special Exclusive</b> 자격을 받은 고객 대상 전용 주문
+                    사이트입니다.<br><br>
+                    아래에 정보를 입력해주시면, 해당 정보를 토대로 상품이 제작되어 <br>영업일 5-7일 이내에 기재해주신 주소로 배송됩니다.
+                </p>
             </div>
-        </a>
-
-
-
-        <a href="https://instagram.com/thxalotlot">
-            <div class="adwrapper">
-                <div class="ad moon">
-                    <div class="layer light"></div>
-                    <div class="layer light light-2"></div>
-                    <!-- <div class="layer layer-1"></div>
-                <div class="layer layer-2"></div>
-                <div class="layer layer-3"></div> -->
+            <div class="payment-container">
+                <div class="products">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./src/thumb/hoodie-front.jpg" alt="티셔츠" /></div>
+                            <div class="swiper-slide"><img src="./src/thumb/hoodie-back.jpg" alt="티셔츠" /></div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next" style="filter: saturate(0);"></div>
+                        <div class="swiper-button-prev" style="filter: saturate(0);"></div>
+                    </div>
+                    <!-- <ul>
+                        <li>
+                            <img src="./src/thumb/hoodie-front.jpg" alt="티셔츠" />
+                        </li>
+                        <li>
+                            <img src="./src/thumb/hoodie-back.jpg" alt="티셔츠" />
+                        </li>
+                    </ul> -->
                 </div>
-                <p class="me">thxalotot</p>
-            </div>
-        </a>
+                <div class="content">
+                    <p class="product title">B4MB Hoodie Black </p>
+                    <!-- <p class="text">XXX,XXX원</p> -->
+                    <p class="product text">우리의 특별한 사람들을 위한 컬렉션,
+                        B4MB가 여러분을 찾아갑니다. <br>새로운 스타일의 이번 컬렉션은 우리들의 활동에 경의를 표하는 동시에 우리가 걷고 있는 거리에서 영감을 받았습니다.<br>
 
+                        유행을 타지 않는 실루엣과 스타일은 B4MB의 간결한 정신을 반영합니다. <br>이번 컬렉션에서는 인류 역사동안 꾸준히 사랑받고 있는 과감하고 눈에 띄는 블랙 & 이와
+                        180도 대비되는 화이트 컬러를 사용해, 결코 잊을 수 없는 첫인상을 남깁니다. <br>거대한 캔버스 중심에 위치한 B4MB, 우리 모두의 미적 감각이 담긴 디테일이 서로
+                        어우러지며 은은하면서도 독보적인 감각을 만들어 냅니다.<br>
+                        강렬한 대조를 이루는 색조와 완성도 높은 디테일을 활용한 고급스러운 레이어로 하루 중 어떤 시간대에서나 독보적인 존재감을 보여줍니다.</p>
 
-        <a href="https://instagram.com/dny_kim">
-            <div class="adwrapper">
-                <div class="ad dny">
-                    <div class="layer light"></div>
-                    <div class="layer light light-2"></div>
-                    <!-- <div class="layer layer-1"></div>
-                <div class="layer layer-2"></div>
-                <div class="layer layer-3"></div> -->
+                    <div class="input-container">
+                        <form id="info-form" action="mail.php" method=”POST” enctype=”multipart/form-data”
+                            name=”EmailForm”>
+                            <fieldset>
+                                <input id="input-name" placeholder="성명" type="text" name="name" tabindex="1" required>
+                            </fieldset>
+                            <fieldset>
+                                <input id="input-email" placeholder="이메일" type="email" name="email" tabindex="2"
+                                    required>
+                            </fieldset>
+                            <fieldset>
+                                <input id="input-phone" placeholder="연락처" type="tel" name="phone" tabindex="3" required>
+                            </fieldset>
+                            <fieldset>
+                                <select id="input-size" placeholder="사이즈" name="size" tabindex="4" required>
+                                    <option value="none" selected="selected">사이즈를 선택해주세요</option>
+                                    <option value="s">S (90)</option>
+                                    <option value="m">M (95)</option>
+                                    <option value="l">L (100)</option>
+                                    <option value="xl">XL (105)</option>
+                                    <option value="2xl">2XL (110)</option>
+                            </fieldset>
+                            <fieldset>
+                                <input id="input-address" placeholder="배송받을 주소" type="text" name="address" tabindex="5"
+                                    required>
+                            </fieldset>
+                            <fieldset>
+                                <textarea id="input-requirement" placeholder="기타 요청사항을 입력해주세요." name="extra"
+                                    tabindex="6" required></textarea>
+                            </fieldset>
+                            <!-- <fieldset id="agreezone">
+                                <input type="checkbox" id="agreement" name="agreement" value="agree" tabindex="7"
+                                    required>
+                                <label class="text" for="agreement" style="font-size: 14px">개인정보 수집 동의</label>
+                            </fieldset> -->
+                            <fieldset>
+                                <!-- <button name="submit" type="submit" id="pay-submit" class="paybutton">SEND</button> -->
+                                <button id="pay-submit" class="paybutton">SEND</button>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
-                <p class="me">dnykim</p>
             </div>
-        </a>
+        </main>
+        <main class="mainContainer" style="width: 100vw; height: 100vh; position: fixed; padding-top: 100vh; z-index: 3; top: 0; left: 0;">
+            <iframe src="./b4mbdiscs/post.html" style="width: 100vw; height: 100vh; position: fixed; z-index: 3; top: 0; left: 0;"></iframe>
 
-
-    </div>
-
-    <div class="text-grid">
-        B4MBB4MBB4MB
-    </div>
-
-    <div class="description">
-        <p>
-            <code>B4MB ARTWORK WORKSHOP</code>.
-        </p>
-        <p class="me">artwork by <a href="https://instagram.com/leemiru" target="_blank">@leemiru</a></p>
+        </main>
+        <div class="modalWrap">
+            <div class="confirm-modal">
+                <div class="title-container">
+                    <p class="title">주문정보 확인</p>
+                </div>
+                <ul>
+                    <li class="flex">
+                        <span class="subtitle">상품명</span><span class="text">B4MB Hoodie Black</span>
+                    </li>
+                    <li class="flex">
+                        <span class="subtitle">가격</span><span class="text">0원</span>
+                    </li>
+                    <li class="flex">
+                        <span class="subtitle">주문자</span><span class="text" id="val-name"></span>
+                    </li>
+                    <li class="flex">
+                        <span class="subtitle">이메일</span><span class="text" id="val-email"></span>
+                    </li>
+                    <li class="flex">
+                        <span class="subtitle">연락처</span><span class="text" id="val-phone"></span>
+                    </li>
+                    <li class="flex">
+                        <span class="subtitle">사이즈</span><span class="text" id="val-size"></span>
+                    </li>
+                    <li class="flex">
+                        <span class="subtitle">배송받을 주소</span><span class="text" id="val-address"></span>
+                    </li>
+                    <li class="flex">
+                        <span class="subtitle">요청사항</span><span class="text" id="val-req"></span>
+                    </li>
+                </ul>
+                <div class="flex button-container" style="width: 100%;">
+                    <button class="paybutton invert" id="false">입력한 정보와 다릅니다.</button>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending"
+                        class="paybutton">입력한 정보가 맞습니다.</button>
+                </div>
+            </div>
+        </div>
+        <footer class="mainFooter">
+            <div class="footer-container" style="padding-top: 100vh;">
+                <p><b style="font-weight: 700;">B4MBOO STUDIO</b>
+                </p>
+                <p><b>주소:</b> 경기도 용인시 기흥구 덕영대로 1732 경희대학교 국제캠퍼스</p>
+                <p>
+                    <b>당신의 기쁜 날을 축하드립니다.</b>
+                </p>
+                <p>©Copyright 2021 B4MBOO STUDIO. ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
     </div>
 </body>
 
-<style>
-    html,
-    body {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        min-height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+<script>(function (d, s, id) { var js; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript"));</script>
 
-    body {
-        font-family: Helvetica, sans-serif;
-        font-size: 18px;
-        line-height: 1.5;
-        margin: 0;
-        color: #fff;
-        /* background: linear-gradient(160deg, rgb(255, 255, 255), rgb(255, 255, 255)) no-repeat; */
-        background: #151515;
-        transition: background 50ms linear;
-    }
-
-    a {
-        color: #56b2ff;
-        text-decoration: none;
-    }
-
-    .wrapper {
-        position: relative;
-        width: 100%;
-        /* max-width: 640px; */
-        height: 100%;
-        align-items: center;
-        display: flex;
-        /* flex-wrap: wrap; */
-        justify-content: center;
-        -webkit-perspective: 800;
-        overflow: visible;
-    }
-
-    .adwrapper {
-        filter: drop-shadow(0px 50px 60px rgba(0, 0, 0, 0.5));
-        cursor: pointer;
-        margin: 0 -72px;
-    }
-
-    .adwrapper .me {
-        text-align: center;
-        /* margin-top: -150px; */
-        opacity: 0;
-        transition: opacity 200ms;
-    }
-
-    .layer {
-        position: absolute;
-        will-change: transform;
-    }
-
-    .ad {
-        position: relative;
-        width: 375px;
-        min-width: 375px;
-        height: 375px;
-        overflow: visible;
-        background: black;
-        -webkit-transform-style: preserve-3d;
-        will-change: transform;
-        box-shadow: 0 60px 100px rgba(0, 0, 0, 0.5);
-        background-repeat: repeat;
-        background-size: cover;
-        background-position: center;
-        clip-path: circle(49.8%);
-        cursor: pointer;
-        transition: margin 300ms ease-out;
-    }
-
-    .ad:hover {
-        animation: rotation infinite 1s;
-        animation-timing-function: linear;
-        margin-top: -100px;
-    }
-
-    @keyframes rotation {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
-    @keyframes lightanim {
-        0% {
-            transform: translateX(-1000px) translateY(100px);
-        }
-
-        100% {
-            transform: translateX(1000px) translateY(100px);
-        }
-    }
-
-    .ad.miru {
-        background-image: url("./b4mbdiscs/miru.png");
-    }
-
-    .ad.curvesign {
-        background-image: url("./b4mbdiscs/curvesign.png");
-    }
-
-    .ad.moon {
-        background-image: url("./b4mbdiscs/moon.png");
-    }
-
-    .ad.dny {
-        background-image: url("./b4mbdiscs/dny.png");
-    }
-
-
-    .layer-1,
-    .layer-2,
-    .layer-3 {
-        top: 50%;
-        left: 50%;
-        margin-left: -630px;
-        margin-top: -375px;
-        width: 1260px;
-        height: 750px;
-        transform: scale(0.7);
-        clip-path: circle(49%);
-    }
-
-    .light {
-        top: 50%;
-        left: 50%;
-        margin-left: -640px;
-        margin-top: -500px;
-        width: 1280px;
-        height: 800px;
-        background: radial-gradient(ellipse closest-side at center, #a5a5a5, black);
-        mix-blend-mode: color-dodge;
-        opacity: 0.7;
-        z-index: 3;
-        animation: lightanim 1 ease-in-out 1.5s;
-        transform: translateX(1000px) translateY(100px);
-    }
-
-    .light-2 {
-        z-index: 4;
-        background: radial-gradient(ellipse closest-side at center, white, black);
-        mix-blend-mode: screen;
-        opacity: 0.5;
-    }
-
-    .layer-1 {
-        background-image: url(http://demos.attasi.com/apple-tv/images/breaking-bad-layer-1.jpg);
-    }
-
-    .layer-2 {
-        background-image: url(http://demos.attasi.com/apple-tv/images/breaking-bad-layer-2.png);
-    }
-
-    .layer-3 {
-        background-image: url(http://demos.attasi.com/apple-tv/images/breaking-bad-layer-3.png);
-    }
-
-    .description {
-        position: fixed;
-        bottom: 0;
-        padding-bottom: 70px;
-        height: fit-content;
-        /* background: black; */
-    }
-
-    .description p {
-        max-width: 840px;
-        margin: 1em auto;
-    }
-
-    .description code {
-        font-family: Monaco, monospace;
-        color: #ccc;
-    }
-
-    .me {
-        font-size: 14px;
-    }
-
-
-    .text-grid {
-        font-family: aktiv-grotesk-extended, sans-serif;
-        font-weight: 900;
-        font-style: normal;
-        font-weight: bold;
-        color: #000;
-        --chars: 4;
-        text-transform: uppercase;
-        font-size: calc(70vmin / var(--chars));
-        display: grid;
-        grid-template-columns: repeat(var(--chars), 1.2em);
-        position: fixed;
-        z-index: -99;
-        mix-blend-mode: overlay;
-    }
-
-    .char {
-        --d: max(0.25, var(--distance, 0));
-        opacity: var(--d);
-        display: inline-grid;
-        place-items: center;
-        transform: scale(calc(var(--d) * 1.4));
-        color: #151515;
-        /* transition: color 0.2s linear; */
-    }
-
-    .notimodal {
-        display: none;
-    }
-
-    @media (max-width: 640px) {
-
-        .notimodal {
-            display: none;
-            align-items: center;
-            justify-content: center;
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            background-color: rgba(0, 0, 0, 0.95);
-            backdrop-filter: blur(100px);
-            -webkit-backdrop-filter: blur(100px);
-            z-index: 9999999999;
-            text-align: center;
-        }
-
-        body {
-            overflow: auto;
-        }
-
-        .wrapper {
-            position: relative;
-            width: 100%;
-            /* max-width: 640px; */
-            height: 100%;
-            align-items: center;
-            display: flex;
-            flex-wrap: wrap;
-            /* flex-wrap: wrap; */
-            justify-content: center;
-            -webkit-perspective: 800;
-            overflow: visible;
-            /* padding-top: 100px; */
-            padding-bottom: 100px;
-        }
-
-        .ad {
-            /* margin-bottom: -500px; */
-        }
-
-        .ad:hover {
-            margin: 0;
-        }
-
-        .light {
-            display: none;
-        }
-    }
-
-    .light-2 {
-        display: none;
-    }
-
-    .description {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .layer-1,
-    .layer-2,
-    .layer-3 {
-        display: none;
-    }
-</style>
+<!-- Swiper JS -->
+<script src="./javascript/swiper-bundle.min.js"></script>
 
 <script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
 
-    var $body = $('body');
-    var $wrapper = $('.wrapper');
-    var WIDTH = $body.width();
-    var HEIGHT = $body.height();
-    var $ad = $('.adwrapper');
-    var $light = $ad.find('.light');
-    // var $layer1 = $ad.find('.layer-1');
-    // var $layer2 = $ad.find('.layer-2');
-    // var $layer3 = $ad.find('.layer-3');
+        },
+    });
 
-    if (WIDTH > 640) {
-        $body.on('mousemove', moveAd);
+    $(function () {
 
-    }
+        // $('#pay-submit').click(function () {
+        //     $inputname = $('#input-name').val();
+        //     $inputemail = $('#input-email').val();
+        //     $inputsize = $('#input-size').val();
+        //     $inputphone = $('#input-phone').val();
+        //     $inputaddress = $('#input-address').val();
+        //     $inputreq = $('#input-requirement').val();
 
-    function moveAd(e) {
-        var xPer = e.clientX / WIDTH;
-        var yPer = e.clientY / HEIGHT;
+        //     $name = $('#val-name').text($inputname);
+        //     $email = $('#val-email').text($inputemail);
+        //     $size = $('#val-size').text($inputsize);
+        //     $phone = $('#val-phone').text($inputphone);
+        //     $address = $('#val-address').text($inputaddress);
+        //     $req = $('#val-requirement').text($inputreq);
 
-        var rotateX = 7.5 - (yPer * 10);
-        var rotateY = -7.5 + (xPer * 10);
-
-        $ad.css({
-            transform: 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)'
-        });
-
-        var translateX = -5 + (xPer * 10);
-        var translateY = -5 + (yPer * 10);
-
-        // $layer2.css({
-        //     transform: 'scale(.7) translateX(' + translateX + 'px) translateY(' + translateY + 'px)'
+        //     $('.modalWrap').fadeIn('fast').css('display', 'flex');
         // });
 
-        // $layer3.css({
-        //     transform: 'scale(.7) translateX(' + (translateX * 2) + 'px) translateY(' + (translateY * 2) + 'px)'
-        // });
+        function paymodal() {
+            $inputname = $('#input-name').val();
+            $inputemail = $('#input-email').val();
+            $inputsize = $('#input-size').val();
+            $inputphone = $('#input-phone').val();
+            $inputaddress = $('#input-address').val();
+            $inputreq = $('#input-requirement').val();
+z
+            $name = $('#val-name').text($inputname);
+            $email = $('#val-email').text($inputemail);
+            $size = $('#val-size').text($inputsize);
+            $phone = $('#val-phone').text($inputphone);
+            $address = $('#val-address').text($inputaddress);
+            $req = $('#val-requirement').text($inputreq);
 
-        var lightX = 800 - (xPer * 1600);
-        var lightY = 100 - (yPer * 600);
+            $('.modalWrap').fadeIn('fast').css('display', 'flex');
+        }
 
-        $light.css({
-            transform: 'translateX(' + lightX + 'px) translateY(' + lightY + 'px)'
+        $('#false').click(function () {
+            $('.modalWrap').fadeOut('fast');
         });
 
-        // const { clientX, clientY } = event.touches ? event.touches[0] : event;
-        recalculateDistances({ x: e.clientX, y: e.clientY });
-    }
-    const elTextGrid = document.querySelector(".text-grid");
 
-    $('.ad.miru').mouseenter(function () {
-        $body.css('background', '#b00f23');
-        $(this).parent().children('.me').css('opacity', '1');
-    }).mouseleave(function () {
-        $body.css('background', '#151515');
-        $(this).parent().children('.me').css('opacity', '0');
     });
-
-    $('.ad.curvesign').mouseenter(function () {
-        $body.css('background', '#acd5f0');
-        $(this).parent().children('.me').css('opacity', '1');
-    }).mouseleave(function () {
-        $body.css('background', '#151515');
-        $(this).parent().children('.me').css('opacity', '0');
-    });
-
-    $('.ad.moon').mouseenter(function () {
-        $body.css('background', '#f6682f');
-        $(this).parent().children('.me').css('opacity', '1');
-    }).mouseleave(function () {
-        $body.css('background', '#151515');
-        $(this).parent().children('.me').css('opacity', '0');
-    });
-
-    $('.ad.dny').mouseenter(function () {
-        $body.css('background', '#715a47');
-        $(this).parent().children('.me').css('opacity', '1');
-    }).mouseleave(function () {
-        $body.css('background', '#151515');
-        $(this).parent().children('.me').css('opacity', '0');
-    });
-
-    function splittingLite(el) {
-        let characters = el.innerText
-            .split("")
-            .filter((char) => char !== " ")
-            .map(
-                (char, i) =>
-                    `<span class="char" data-char="${char}" style="--i: ${i}">${char}</span>`
-            );
-        el.innerHTML = characters.join("");
-        el.style.setProperty("--total", characters.length);
-        return el.querySelectorAll(".char");
-    }
-
-    const elCharacters = splittingLite(elTextGrid);
-
-    function getCharMeasurements() {
-        return Array.from(elCharacters, (elChar) => {
-            return {
-                element: elChar,
-                rect: elChar.getBoundingClientRect(),
-                distance: 0
-            };
-        });
-    }
-
-    let charMeasurements = getCharMeasurements();
-
-    window.addEventListener("resize", () => {
-        charMeasurements = getCharMeasurements();
-    });
-
-    function recalculateDistances(mouseCoords) {
-        let containerRect = elTextGrid.getBoundingClientRect();
-        let diagonal = Math.hypot(containerRect.width, containerRect.height);
-        charMeasurements.forEach(({ element, rect }) => {
-            const distance = Math.hypot(
-                rect.left - mouseCoords.x,
-                rect.top - mouseCoords.y
-            );
-            const normalizedDistance = 1 - distance / diagonal;
-            element.style.setProperty(
-                "--distance",
-                Math.max(Math.pow(normalizedDistance, 3), 0)
-            );
-        });
-    }
 </script>
 
 </html>
