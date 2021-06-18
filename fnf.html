@@ -48,7 +48,7 @@
                     <li>
                         <!-- <img class="logo" src="./src/logo.svg" alt="로고" /> -->
                         <script type="text/javascript">
-                            var imageURLs = ["./src/logo.svg", "./src/logo-2.svg", "./src/logo-3.svg", "./src/logo-4.svg"]; function getImageTag() { var img = '<img class="logo" src=\"'; var randomIndex = Math.floor(Math.random() * imageURLs.length); img += imageURLs[randomIndex]; img += '\" alt=\"LOGO\"/>'; return img; };
+                            var imageURLs = ["./src/logo.svg", "./src/logo-2.svg", "./src/logo-3.svg", "./src/logo-4.svg"]; function getImageTag() { var img = '<a href="./index.html"><img class="logo" src=\"'; var randomIndex = Math.floor(Math.random() * imageURLs.length); img += imageURLs[randomIndex]; img += '\" alt=\"LOGO\"/></a>'; return img; };
                             document.write(getImageTag());</script>
                     </li>
                 </ul>
@@ -66,30 +66,25 @@
             </div>
             <div class="payment-container">
                 <div class="products">
-                    <!-- Swiper -->
-                    <div class="swiper-container">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper-container mySwiper2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="./src/thumb/hoodie-front.jpg" alt="티셔츠" /></div>
                             <div class="swiper-slide"><img src="./src/thumb/hoodie-back.jpg" alt="티셔츠" /></div>
                         </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next" style="filter: saturate(0);"></div>
-                        <div class="swiper-button-prev" style="filter: saturate(0);"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
-                    <!-- <ul>
-                        <li>
-                            <img src="./src/thumb/hoodie-front.jpg" alt="티셔츠" />
-                        </li>
-                        <li>
-                            <img src="./src/thumb/hoodie-back.jpg" alt="티셔츠" />
-                        </li>
-                    </ul> -->
-
-                    <!-- https://www.developerdrive.com/add-google-forms-static-site/ -->
+                    <div thumbsSlider="" class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./src/thumb/hoodie-front.jpg" alt="티셔츠" /></div>
+                            <div class="swiper-slide"><img src="./src/thumb/hoodie-back.jpg" alt="티셔츠" /></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="content">
                     <p class="product title">B4MB Hoodie Black </p>
-                    <!-- <p class="text">XXX,XXX원</p> -->
+                    <span class="subtitle" style="margin-bottom: 16px;">25,900원</span>
                     <p class="product text">우리의 특별한 사람들을 위한 컬렉션,
                         B4MB가 여러분을 찾아갑니다. <br>새로운 스타일의 이번 컬렉션은 우리들의 활동에 경의를 표하는 동시에 우리가 걷고 있는 거리에서 영감을 받았습니다.<br>
 
@@ -99,16 +94,20 @@
                         강렬한 대조를 이루는 색조와 완성도 높은 디테일을 활용한 고급스러운 레이어로 하루 중 어떤 시간대에서나 독보적인 존재감을 보여줍니다.</p>
 
                     <div class="input-container">
-                        <form id="info-form" action="https://docs.google.com/forms/d/11ILIJtHt_fKaZL7Wbwxlu9dOsQG4Ah1et08GPp4R6U0/formResponse" method=”POST">
+                        <form id="info-form"
+                            action="https://docs.google.com/forms/d/11ILIJtHt_fKaZL7Wbwxlu9dOsQG4Ah1et08GPp4R6U0/formResponse"
+                            method=”POST">
                             <fieldset>
-                                <input id="input-name" placeholder="성명" type="text" name="entry.1884265043" tabindex="1" required>
-                            </fieldset>
-                            <fieldset>
-                                <input id="input-email" placeholder="이메일" type="email" name="entry.1880102793" tabindex="2"
+                                <input id="input-name" placeholder="성명" type="text" name="entry.1884265043" tabindex="1"
                                     required>
                             </fieldset>
                             <fieldset>
-                                <input id="input-phone" placeholder="연락처" type="tel" name="entry.1658940202" tabindex="3" required>
+                                <input id="input-email" placeholder="이메일" type="email" name="entry.1880102793"
+                                    tabindex="2" required>
+                            </fieldset>
+                            <fieldset>
+                                <input id="input-phone" placeholder="연락처" type="tel" name="entry.1658940202"
+                                    tabindex="3" required>
                             </fieldset>
                             <fieldset>
                                 <select id="input-color" placeholder="색상" name="entry.2027594163" tabindex="4" required>
@@ -118,7 +117,7 @@
                                     <option value="white-mono">WHITE/MONO</option>
                                     <option value="white-color">WHITE/COLOR</option>
                                     <option value="edition">EDITION</option>
-                                    </select>
+                                </select>
                             </fieldset>
                             <fieldset>
                                 <select id="input-size" placeholder="사이즈" name="entry.1922944606" tabindex="5" required>
@@ -128,19 +127,24 @@
                                     <option value="l">L (100)</option>
                                     <option value="xl">XL (105)</option>
                                     <option value="2xl">2XL (110)</option>
-                                    </select>
+                                </select>
                             </fieldset>
                             <fieldset>
-                                <input id="input-address" placeholder="배송받을 주소" type="text" name="entry.51366997" tabindex="6" required>
+                                <input id="input-address" placeholder="배송받을 주소" type="text" name="entry.51366997"
+                                    tabindex="6" required>
                             </fieldset>
                             <fieldset>
                                 <textarea id="input-requirement" placeholder="기타 요청사항을 입력해주세요." name="entry.1030645397"
                                     tabindex="6" required></textarea>
                             </fieldset>
                             <fieldset>
-                                <button id="pay-submit" type="submit" class="paybutton">SUBMIT</button>
+                                <button id="form-submit" style="display: none;" type="submit"
+                                    class="paybutton">SUBMIT</button>
+
                             </fieldset>
                         </form>
+
+                        <button id="pay-submit" class="paybutton">SUBMIT</button>
 
                         <!-- <button id="pay-submit" class="paybutton">SEND</button> -->
                     </div>
@@ -151,6 +155,7 @@
             <div class="confirm-modal">
                 <div class="title-container">
                     <p class="title">주문정보 확인</p>
+                    <p class="text">입력하신 정보가 맞는지 다시한번 확인 부탁드립니다.</p>
                 </div>
                 <ul>
                     <li class="flex">
@@ -180,13 +185,13 @@
                 </ul>
                 <div class="flex button-container" style="width: 100%;">
                     <button class="paybutton invert" id="false">입력한 정보와 다릅니다.</button>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending"
-                        class="paybutton">입력한 정보가 맞습니다.</button>
+                    <button id="confirmPay" class="paybutton" onclick="$('#form-submit').trigger('click');">입력한 정보가
+                        맞습니다.</button>
                 </div>
             </div>
         </div>
         <footer class="mainFooter">
-            <div class="footer-container" style="padding-top: 100vh;">
+            <div class="footer-container">
                 <p><b style="font-weight: 700;">B4MBOO STUDIO</b>
                 </p>
                 <p><b>주소:</b> 경기도 용인시 기흥구 덕영대로 1732 경희대학교 국제캠퍼스</p>
@@ -205,52 +210,54 @@
 <script src="./javascript/swiper-bundle.min.js"></script>
 
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+    // var swiper = new Swiper('.swiper-container', {
+    //     loop: true,
+    //     navigation: {
+    //         nextEl: '.swiper-button-next',
+    //         prevEl: '.swiper-button-prev',
 
+    //     },
+    // });
+
+    var swiper = new Swiper(".mySwiper", {
+        // loop: true,
+        spaceBetween: 10,
+        slidesPerView: 6,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-    });
+        thumbs: {
+          swiper: swiper,
+        },
+      });
 
     $(function () {
 
-        // $('#pay-submit').click(function () {
-        //     $inputname = $('#input-name').val();
-        //     $inputemail = $('#input-email').val();
-        //     $inputsize = $('#input-size').val();
-        //     $inputphone = $('#input-phone').val();
-        //     $inputaddress = $('#input-address').val();
-        //     $inputreq = $('#input-requirement').val();
-
-        //     $name = $('#val-name').text($inputname);
-        //     $email = $('#val-email').text($inputemail);
-        //     $size = $('#val-size').text($inputsize);
-        //     $phone = $('#val-phone').text($inputphone);
-        //     $address = $('#val-address').text($inputaddress);
-        //     $req = $('#val-requirement').text($inputreq);
-
-        //     $('.modalWrap').fadeIn('fast').css('display', 'flex');
-        // });
-
-        function paymodal() {
+        $('#pay-submit').click(function () {
             $inputname = $('#input-name').val();
             $inputemail = $('#input-email').val();
             $inputsize = $('#input-size').val();
             $inputphone = $('#input-phone').val();
             $inputaddress = $('#input-address').val();
             $inputreq = $('#input-requirement').val();
-            
+
             $name = $('#val-name').text($inputname);
             $email = $('#val-email').text($inputemail);
             $size = $('#val-size').text($inputsize);
             $phone = $('#val-phone').text($inputphone);
             $address = $('#val-address').text($inputaddress);
-            $req = $('#val-requirement').text($inputreq);
+            $req = $('#val-req').text($inputreq);
 
             $('.modalWrap').fadeIn('fast').css('display', 'flex');
-        }
+        });
 
         $('#false').click(function () {
             $('.modalWrap').fadeOut('fast');
