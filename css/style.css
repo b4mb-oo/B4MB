@@ -83,6 +83,7 @@ input {
   border-radius: 0;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 8px;
+  -webkit-appearance: none;
 }
 
 select {
@@ -96,6 +97,13 @@ select {
   border-radius: 0;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 8px;
+}
+
+select::before {
+  content: ">";
+  color: black;
+  position: absolute;
+  z-index: 2222222;
 }
 
 select::content {
