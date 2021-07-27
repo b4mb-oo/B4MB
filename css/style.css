@@ -445,7 +445,7 @@ textarea {
   /* background-color: #ccc;  */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -454,8 +454,23 @@ textarea {
 
 }
 
+.mainBanner > div {
+  padding: 36px;
+}
+
+.mainBanner > div > p {
+  color: #fff;
+  padding: 8px;
+  backdrop-filter: blur(30px);
+}
+
 .mainBanner:hover {
   box-shadow: 0px 0px 100vw 100vh black;
+}
+
+.mainBanner:hover > div > p {
+  background-color: #fff;
+  color: #000;
 }
 
 /* fnf */
@@ -907,6 +922,11 @@ body#naked .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   .mainHeader > .header-container > ul > li {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .mainBanner {
+    justify-content: center;
+  
   }
 
   .payment-container {
