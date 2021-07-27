@@ -325,8 +325,9 @@ textarea {
 
 .noticeLine > .content-container p {
   white-space: nowrap;
+  font-size: 13px;
   animation: noticeMove infinite linear 30s;
-  margin: 0 24px;
+  margin-right: 24px;
 }
 
 @keyframes noticeMove {
