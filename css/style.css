@@ -93,6 +93,7 @@ body {
 
 .text {
   font-size: 14px;
+  line-height: 1.8;
 }
 
 .product.title {
@@ -882,7 +883,7 @@ body#naked .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #000 !important;
-  min-height: 82vh;
+  min-height: 85vh;
   color: #fff;
 
   /* Center slide text vertically */
@@ -955,6 +956,7 @@ body#naked .swiper-slide .content-container > .artworkBg{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   position: absolute;
   left: 0;
   z-index: 0;
@@ -1015,6 +1017,20 @@ body#naked .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     justify-content: flex-end;
     padding-top: 12px;
     padding-bottom: 24px;
+  }
+
+  body#naked .swiper-slide .content-container#nkdIntro {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  body#naked .swiper-slide .content-container#nkdCover {
+    justify-content: center;
+  }
+
+  body#naked .swiper-slide .content-container#nkdCover > .info-container {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 8px;
   }
 
   body#naked .swiper-slide .content-container > .info-container{
