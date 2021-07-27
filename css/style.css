@@ -233,7 +233,7 @@ textarea {
 .mainHeader > .header-container {
   width: 100%;
   max-width: 1440px;
-  height: 60px;
+  height: 60px !important;
   margin: 0 auto;
 }
 
@@ -901,7 +901,7 @@ body#naked .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   .mainHeader > .header-container {
     width: 100%;
     max-width: 1440px;
-    height: 100%;
+    height: 60px !important;
   }
 
   .mainHeader > .header-container > ul > li {
