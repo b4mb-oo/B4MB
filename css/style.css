@@ -13,6 +13,8 @@
   font-style: normal;
   word-break: keep-all;
   text-decoration: none;
+  font-kerning: auto;
+  letter-spacing: 0.5px;
 }
 
 a {
@@ -172,7 +174,12 @@ textarea {
   font-size: 24px;
 }
 
+.title.giant {
+  font-size: 36px;
+}
+
 .text {
+  letter-spacing: -1px;
   font-size: 11px;
 }
 
@@ -874,8 +881,9 @@ body#naked .swiper-container {
 body#naked .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #000 !important;
   min-height: 82vh;
+  color: #fff;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -897,6 +905,61 @@ body#naked .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* 컨텐츠 구성 */
+
+body#naked .swiper-slide .content-container {
+  width: calc(100% - 24px);
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body#naked .swiper-slide .content-container > .info-container {
+  text-align: left;
+  z-index: 1;
+  width: 100%;
+}
+
+body#naked .swiper-slide .content-container > .artwork {
+  width: 100%;
+  max-width: 580px;
+  height: auto;
+  object-fit: contain;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+body#naked .swiper-slide .content-container#nkdLeemiru > .artwork {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body#naked .swiper-slide .content-container#nkdLeemiru > .artwork > canvas{
+  max-width: 290px;
+  width: 100%;
+  height: auto;
+}
+
+body#naked .swiper-slide .content-container > iframe.artwork {
+  height: 100vh;
+  max-height: 875px;
+  overflow: hidden;
+} 
+
+body#naked .swiper-slide .content-container > .artworkBg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  filter: blur(50px) saturate(120%);
+  opacity: 0.65;
 }
 
 body#naked .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
@@ -945,5 +1008,20 @@ body#naked .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   .modalWrap > .confirm-modal {
     height: calc(100% - 16px);
     align-items: center;
+  }
+
+  body#naked .swiper-slide .content-container {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-top: 12px;
+    padding-bottom: 24px;
+  }
+
+  body#naked .swiper-slide .content-container > .info-container{
+    margin-top: 24px;
+  }
+
+  body#naked .swiper-slide .content-container#nkdLeemiru > .artwork > canvas{
+    max-width: none;
   }
 }
