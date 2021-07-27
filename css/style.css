@@ -217,13 +217,13 @@ textarea {
 .mainHeader.dark > .header-container {
   filter: invert(1);
 }
-/* 
-.mainHeader::after {
+
+/* .mainHeader::after {
   content: " ";
   display: inline-block;
-  position: fixed;
+  position: relative;
   width: 100%;
-  height: 80px;
+  height: 60px;
   top: 0;
   left: 0;
   z-index: -1;
@@ -233,7 +233,7 @@ textarea {
 .mainHeader > .header-container {
   width: 100%;
   max-width: 1440px;
-  height: 100%;
+  height: 60px;
   margin: 0 auto;
 }
 
@@ -290,6 +290,53 @@ textarea {
   object-fit: contain;
   height: fit-content;
   cursor: pointer;
+}
+
+
+/* 공지사항 라인 */
+.noticeLine {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  /* background-color: #000; */
+  min-height: 32px;
+  max-height: 32px;
+  overflow-x: hidden;
+  cursor: pointer;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.noticeLine:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.noticeLine > .content-container {
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.noticeLine:hover > .content-container {
+  color: #fff;
+}
+
+.noticeLine > .content-container p {
+  white-space: nowrap;
+  animation: noticeMove infinite linear 30s;
+  margin: 0 24px;
+}
+
+@keyframes noticeMove {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(-100vw);
+  }
 }
 
 #bg-animation {
@@ -387,51 +434,6 @@ textarea {
   padding-top: 92px;
 }
 
-/* 공지사항 라인 */
-.noticeLine {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  /* background-color: #000; */
-  min-height: 32px;
-  max-height: 32px;
-  overflow-x: hidden;
-  cursor: pointer;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-.noticeLine:hover {
-  background-color: rgba(0, 0, 0, 1);
-}
-
-.noticeLine > a > .content-container {
-  color: rgb(0, 0, 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.noticeLine:hover > a > .content-container {
-  color: #fff;
-}
-
-.noticeLine > a > .content-container p {
-  white-space: nowrap;
-  animation: noticeMove infinite linear 30s;
-  margin: 0 24px;
-}
-
-@keyframes noticeMove {
-  0% {
-    transform: translateX(100vw);
-  }
-
-  100% {
-    transform: translateX(-100vw);
-  }
-}
 
 /* 배너 존 */
 
