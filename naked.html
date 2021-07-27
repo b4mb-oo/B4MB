@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>B4MB | Since 2017</title>
+    <link rel="apple-touch-icon-precomposed" sizes="300x300" href="./src/square-logo.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta property="og:url" content="https://www.b4mb.ooo">
+    <meta property="og:title" content="B4MB">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./src/square-logo.png">
+    <meta property="og:description" content="B4MBOO STUDIO">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'nzy6ngm',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body id="naked">
+    <header class="mainHeader dark">
+        <div class="header-container">
+            <ul>
+                <a href="index.html">
+                    <li>
+                        <img class="logo" style="filter: invert(1);" src="./src/b4mb-logo.svg" alt="로고" />
+                        <!-- <script type="text/javascript">
+                                var imageURLs = ["./src/b4mb-logo.svg"]; function getImageTag() { var img = '<a style="height: 28px" href="./index.html"><img class="logo" src=\"'; var randomIndex = Math.floor(Math.random() * imageURLs.length); img += imageURLs[randomIndex]; img += '\" alt=\"LOGO\"/></a>'; return img; };
+                                document.write(getImageTag());</script> -->
+                        <p id="txtHome" class="text">HOME</p>
+                    </li>
+                </a>
+                <a>
+                    <li id="btnMenu" style="background-color: rgba(0, 0, 0, 0.1);">
+                        <p class="text">HAMBURGER</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <!-- <div class="noticeLine">
+            <div class="content-container">
+                <a href="./fnf.html">
+                    <p class="text big">경희대학교 예술디자인대학 통합전시회 '결' 그 네번째 결 - '민낯'의 <b>특별 티셔츠</b>를 신청하세요! - 신청하러가기</p>
+                </a>
+                <a href="./fnf.html">
+                    <p class="text big">경희대학교 예술디자인대학 통합전시회 '결' 그 네번째 결 - '민낯'의 <b>특별 티셔츠</b>를 신청하세요! - 신청하러가기</p>
+                </a>
+                <a href="./fnf.html">
+                    <p class="text big">경희대학교 예술디자인대학 통합전시회 '결' 그 네번째 결 - '민낯'의 <b>특별 티셔츠</b>를 신청하세요! - 신청하러가기</p>
+                </a>
+            </div>
+        </div> -->
+        <div class="menuWrap none">
+            <div class="menu-container">
+                <div class="menu-inner-container" style="opacity: 0;">empty</div>
+                <div class="menu-inner-container">
+                    <ul>
+                        <li>
+                            <p class="text">aboutB4MB</p>
+                        </li>
+                        <li>
+                            <p class="text">ourWorks</p>
+                        </li>
+                        <li>
+                            <p class="text">b4mbShop</p>
+                        </li>
+                        <li>
+                            <p class="text">contactUs</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="mainWrap wide">
+        <main class="mainContainer">
+
+            <!-- Swiper -->
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">전시 표지</div>
+                    <div class="swiper-slide">전시 개요</div>
+                    <div class="swiper-slide">이미루 작품</div>
+                    <div class="swiper-slide">문성욱 작품</div>
+                    <div class="swiper-slide">정태훈 작품</div>
+                    <div class="swiper-slide">김동욱 작품</div>
+                    <div class="swiper-slide">신발</div>
+                    <div class="swiper-slide">향후 우리의 방향성</div>
+                    <div class="swiper-slide">엔딩</div>
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "progressbar",
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            </script>
+        </main>
+
+
+
+    </div>
+    <footer class="mainFooter">
+        <div class="footer-container">
+            <p><b style="font-weight: 700;">B4MBOO STUDIO</b>
+            </p>
+            <!-- <p>
+                    <b>당신의 기쁜 날을 축하드립니다.</b>
+                </p> -->
+            <p><b>주소:</b> 경기도 수원시 영통구</p>
+            <p>
+                사업자 대표: <b>정태훈</b>
+            </p>
+            <p>©Copyright 2021 B4MBOO STUDIO. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+</body>
+
+<script>
+
+    $('#btnMenu').click(function () {
+        $('.menuWrap').toggleClass('none');
+
+    });
+
+    $('.mainBanner').hover(function () {
+        $('header').toggleClass('invert');
+    });
+</script>
+
+<!-- Swiper JS -->
+<script src="./javascript/swiper-bundle.min.js"></script>
+
+
+
+</html>
