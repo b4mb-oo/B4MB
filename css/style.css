@@ -357,7 +357,7 @@ textarea {
 /* 푸터 */
 .mainFooter {
   width: 100%;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   margin-bottom: 48px;
 }
 
@@ -404,7 +404,7 @@ textarea {
   background-color: rgba(0, 0, 0, 1);
 }
 
-.noticeLine > .content-container {
+.noticeLine > a > .content-container {
   color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
@@ -413,11 +413,11 @@ textarea {
   padding-bottom: 4px;
 }
 
-.noticeLine:hover > .content-container {
+.noticeLine:hover > a > .content-container {
   color: #fff;
 }
 
-.noticeLine > .content-container p {
+.noticeLine > a > .content-container p {
   white-space: nowrap;
   animation: noticeMove infinite linear 30s;
   margin: 0 24px;
