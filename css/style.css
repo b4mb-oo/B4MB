@@ -313,10 +313,9 @@ textarea {
 .noticeLine > .content-container {
   color: rgb(0, 0, 0);
   display: flex;
+  height: 32px;
   align-items: center;
   justify-content: center;
-  padding-top: 4px;
-  padding-bottom: 4px;
 }
 
 .noticeLine:hover > .content-container {
@@ -325,7 +324,7 @@ textarea {
 
 .noticeLine > .content-container p {
   white-space: nowrap;
-  font-size: 13px;
+  font-size: 14px;
   animation: noticeMove infinite linear 30s;
   margin-right: 24px;
 }
