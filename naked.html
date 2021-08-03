@@ -10,13 +10,13 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
     <title>B4MB | Since 2017</title>
-    <link rel="apple-touch-icon-precomposed" sizes="300x300" href="./src/square-logo.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="300x300" href="/src/square-logo.png" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta property="og:url" content="https://www.b4mb.ooo">
     <meta property="og:title" content="B4MB">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./src/square-logo.png">
+    <meta property="og:image" content="/src/square-logo.png">
     <meta property="og:description" content="B4MBOO STUDIO">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -24,11 +24,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
 
     <script>
         (function (d) {
@@ -43,62 +43,7 @@
 </head>
 
 <body id="naked">
-    <header class="mainHeader dark">
-        <div class="header-container">
-            <ul>
-                <a href="index.html">
-                    <li>
-                        <img class="logo" style="filter: invert(1);" src="./src/b4mb-logo.svg" alt="로고" />
-                        <!-- <script type="text/javascript">
-                                var imageURLs = ["./src/b4mb-logo.svg"]; function getImageTag() { var img = '<a style="height: 28px" href="./index.html"><img class="logo" src=\"'; var randomIndex = Math.floor(Math.random() * imageURLs.length); img += imageURLs[randomIndex]; img += '\" alt=\"LOGO\"/></a>'; return img; };
-                                document.write(getImageTag());</script> -->
-                        <p id="txtHome" class="text">HOME</p>
-                    </li>
-                </a>
-                <a>
-                    <li id="btnMenu" style="background-color: rgba(0, 0, 0, 0.1);">
-                        <p class="text">HAMBURGER</p>
-                    </li>
-                </a>
-            </ul>
-        </div>
-        <!-- <div class="noticeLine">
-            <div class="content-container">
-                <a href="./fnf.html">
-                    <p class="text big">경희대학교 예술디자인대학 통합전시회 '결' 그 네번째 결 - '민낯'의 <b>특별 티셔츠</b>를 신청하세요! - 신청하러가기</p>
-                </a>
-                <a href="./fnf.html">
-                    <p class="text big">경희대학교 예술디자인대학 통합전시회 '결' 그 네번째 결 - '민낯'의 <b>특별 티셔츠</b>를 신청하세요! - 신청하러가기</p>
-                </a>
-                <a href="./fnf.html">
-                    <p class="text big">경희대학교 예술디자인대학 통합전시회 '결' 그 네번째 결 - '민낯'의 <b>특별 티셔츠</b>를 신청하세요! - 신청하러가기</p>
-                </a>
-            </div>
-        </div> -->
-        <div class="menuWrap none">
-            <div class="menu-container">
-                <div class="menu-inner-container" style="opacity: 0;">empty</div>
-                <div class="menu-inner-container">
-                    <ul>
-                        <li>
-                            <p class="text">aboutB4MB</p>
-                        </li>
-                        <li>
-                            <p class="text">ourWorks</p>
-                        </li>
-                        <li>
-                            <p class="text">b4mbShop</p>
-                        </li>
-                        <li>
-                            <p class="text">contactUs</p>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-
+    <header class="mainHeader dark noNotice" include-html="/html/cmmn/header.html"></header>
 
     <div class="mainWrap wide">
         <main class="mainContainer">
@@ -125,7 +70,13 @@
                                 <p class="title giant" id="art-title" style="font-size: 52px;">"민낯"</p>
                             </div>
                             <div class="info-container">
-                                <p class="text big" id="intro-desc">'사람은 누구나 세 개의 삶을 산다. 공적인 삶, 개인의 삶, 그리고 비밀의 삶.' <span class="text">- 영화 '완벽한 타인' 에서 발췌.</span><br>순수한 사랑으로 곱게 빚어진 얼굴 위, 당신은 어떤 가면을 쓰고 있는가.<br>모든 경험이 새로웠던 어릴 적에 비해, 용량이 가득한 하드디스크 마냥 인생의 데이터가 가득 쌓이고 나니<br>이제는 진심보다는 뻔한 형식과 가식을 나누는 것이 일상이 되었다.<br>좋아요와 팔로워를 쫓고, 셀 수 없는 관심을 갈구하는 이 시대의 사람들은 정작 스스로의 민낯을 마주할 시간은 없는 것 같다.<br>팬데믹 시대를 맞이하며 사람간의 '관계'를 맺는 것이 힘들어진 요즘, 애석하게도 우리는 각자의 민낯을 자주 마주하게 된다.<br>당신은 당신의 '민낯'을 어떻게 받아들이고 있는가.<br>그저 침대에 누워 정처없이 <b>누군가와의 연결</b>만을 기다리고 있지 않은가?<br><br>B4MB는 이번 전시회 주제인 '민낯'을 통해 각자의 민낯을 여실히 드러내고 싶다.</p>
+                                <p class="text big" id="intro-desc">'사람은 누구나 세 개의 삶을 산다. 공적인 삶, 개인의 삶, 그리고 비밀의 삶.' <span
+                                        class="text">- 영화 '완벽한 타인' 에서 발췌.</span><br>순수한 사랑으로 곱게 빚어진 얼굴 위, 당신은 어떤 가면을 쓰고
+                                    있는가.<br>모든 경험이 새로웠던 어릴 적에 비해, 용량이 가득한 하드디스크 마냥 인생의 데이터가 가득 쌓이고 나니<br>이제는 진심보다는 뻔한
+                                    형식과 가식을 나누는 것이 일상이 되었다.<br>좋아요와 팔로워를 쫓고, 셀 수 없는 관심을 갈구하는 이 시대의 사람들은 정작 스스로의 민낯을 마주할
+                                    시간은 없는 것 같다.<br>팬데믹 시대를 맞이하며 사람간의 '관계'를 맺는 것이 힘들어진 요즘, 애석하게도 우리는 각자의 민낯을 자주 마주하게
+                                    된다.<br>당신은 당신의 '민낯'을 어떻게 받아들이고 있는가.<br>그저 침대에 누워 정처없이 <b>누군가와의 연결</b>만을 기다리고 있지
+                                    않은가?<br><br>B4MB는 이번 전시회 주제인 '민낯'을 통해 각자의 민낯을 여실히 드러내고 싶다.</p>
                             </div>
                         </div>
                     </div>
@@ -143,8 +94,8 @@
                                     사실적인 움직임을 그려내기 위해 사용한다. <br>확률론과 통계학의 마르코프 행렬과 다변수 미적분학의 헤세 행렬 등 역시 행렬의 응용이다. <br>행렬
                                     계산은 수치해석학의 중요한 문제 중 하나이다. 행렬 분해는 행렬 계산을 이론과 실제 응용에서 모두 단순화할 수 있다. <br>희소행렬, 띠행렬 등 널리
                                     사용되는 특수한 구조의 행렬들의 경우 특화된 고속 알고리즘들이 존재한다.</p>
-                                    <br>
-                                    <button class="paybutton invert" id="btnReplay"style="width: 128px;">다시 재생</button>
+                                <br>
+                                <button class="paybutton invert" id="btnReplay" style="width: 128px;">다시 재생</button>
                             </div>
                             <div class="artwork">
                                 <canvas id="canvas1"></canvas>
@@ -228,28 +179,13 @@
 
 
     </div>
-    <footer class="mainFooter">
-        <div class="footer-container">
-            <p><b style="font-weight: 700;">B4MBOO STUDIO</b>
-            </p>
-            <!-- <p>
-                    <b>당신의 기쁜 날을 축하드립니다.</b>
-                </p> -->
-            <p><b>주소 :</b> 경기도 수원시 영통구</p>
-            <p>
-                사업자 대표 : <b>정태훈</b>
-            </p>
-            <p>©Copyright 2021 B4MBOO STUDIO. ALL RIGHTS RESERVED</p>
-        </div>
-    </footer>
+    <footer include-html="/html/cmmn/footer.html"></footer>
 </body>
 
+<script src="/script/background.js"></script>
+
+
 <script>
-
-    $('#btnMenu').click(function () {
-        $('.menuWrap').toggleClass('none');
-
-    });
 
     $('.mainBanner').hover(function () {
         $('header').toggleClass('invert');
@@ -257,7 +193,7 @@
 </script>
 
 <!-- Swiper JS -->
-<script src="./javascript/swiper-bundle.min.js"></script>
+<script src="/javascript/swiper-bundle.min.js"></script>
 
 
 

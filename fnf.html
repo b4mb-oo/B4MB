@@ -41,61 +41,9 @@
 </head>
 
 <body>
-    <header class="mainHeader light">
-        <div class="header-container">
-            <ul>
-                <a href="index.html">
-                    <li>
-                        <img class="logo" style="filter: invert(1);" src="./src/b4mb-logo.svg" alt="로고" />
-                        <!-- <script type="text/javascript">
-                                var imageURLs = ["./src/b4mb-logo.svg"]; function getImageTag() { var img = '<a style="height: 28px" href="./index.html"><img class="logo" src=\"'; var randomIndex = Math.floor(Math.random() * imageURLs.length); img += imageURLs[randomIndex]; img += '\" alt=\"LOGO\"/></a>'; return img; };
-                                document.write(getImageTag());</script> -->
-                        <p id="txtHome" class="text">HOME</p>
-                    </li>
-                </a>
-                <a>
-                    <li id="btnMenu" style="background-color: rgba(0, 0, 0, 0.1);">
-                        <p class="text">HAMBURGER</p>
-                    </li>
-                </a>
-            </ul>
-        </div>
-        <div class="menuWrap none">
-            <div class="menu-container">
-                <div class="menu-inner-container" style="opacity: 0;">empty</div>
-                <div class="menu-inner-container">
-                    <ul>
-                        <li>
-                            <p class="text">aboutB4MB</p>
-                        </li>
-                        <li>
-                            <p class="text">ourWorks</p>
-                        </li>
-                        <li>
-                            <p class="text">b4mbShop</p>
-                        </li>
-                        <li>
-                            <p class="text">contactUs</p>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="noticeLine">
-            <div class="content-container">
-                <a href="./fnf.html">
-                    <p class="text big">경희대학교 예술디자인대학 통합전시회 '결' 그 네번째 결 - '민낯'의 <b>특별 티셔츠</b>를 신청하세요! - 신청하러가기</p>
-                </a>
-                <a href="./fnf.html">
-                    <p class="text big">경희대학교 예술디자인대학 통합전시회 '결' 그 네번째 결 - '민낯'의 <b>특별 티셔츠</b>를 신청하세요! - 신청하러가기</p>
-                </a>
-                <a href="./fnf.html">
-                    <p class="text big">경희대학교 예술디자인대학 통합전시회 '결' 그 네번째 결 - '민낯'의 <b>특별 티셔츠</b>를 신청하세요! - 신청하러가기</p>
-                </a>
-            </div>
-        </div> -->
+    <header class="mainHeader light" include-html="./html/cmmn/header.html">
     </header>
+    
     <div class="mainWrap">
 
         <main class="mainContainer">
@@ -285,6 +233,9 @@
         </footer>
     </div>
 </body>
+
+<script src="./script/background.js"></script>
+
 
 <script>(function (d, s, id) { var js; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript"));</script>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>

@@ -10,13 +10,13 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
     <title>B4MB | Since 2017</title>
-    <link rel="apple-touch-icon-precomposed" sizes="300x300" href="./src/square-logo.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="300x300" href="/src/square-logo.png" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta property="og:url" content="https://www.b4mb.ooo">
     <meta property="og:title" content="B4MB">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./src/square-logo.png">
+    <meta property="og:image" content="/src/square-logo.png">
     <meta property="og:description" content="B4MBOO STUDIO">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -24,11 +24,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
 
     <script>
         (function (d) {
@@ -43,58 +43,9 @@
 </head>
 
 <body>
-    <header class="mainHeader light">
-        <div class="header-container">
-            <ul>
-                <a href="index.html">
-                    <li>
-                        <img class="logo" style="filter: invert(1);" src="./src/b4mb-logo.svg" alt="로고" />
-                        <!-- <script type="text/javascript">
-                                var imageURLs = ["./src/b4mb-logo.svg"]; function getImageTag() { var img = '<a style="height: 28px" href="./index.html"><img class="logo" src=\"'; var randomIndex = Math.floor(Math.random() * imageURLs.length); img += imageURLs[randomIndex]; img += '\" alt=\"LOGO\"/></a>'; return img; };
-                                document.write(getImageTag());</script> -->
-                        <p id="txtHome" class="text">HOME</p>
-                    </li>
-                </a>
-                <a>
-                    <li id="btnMenu" style="background-color: rgba(0, 0, 0, 0.1);">
-                        <p class="text">HAMBURGER</p>
-                    </li>
-                </a>
-            </ul>
-        </div>
-        <div class="menuWrap none">
-            <div class="menu-container">
-                <div class="menu-inner-container" style="opacity: 0;">empty</div>
-                <div class="menu-inner-container">
-                    <ul>
-                        <li>
-                            <p class="text">aboutB4MB</p>
-                        </li>
-                        <li>
-                            <p class="text">ourWorks</p>
-                        </li>
-                        <li>
-                            <p class="text">b4mbShop</p>
-                        </li>
-                        <li>
-                            <p class="text">contactUs</p>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="noticeLine">
-            <div class="content-container">
-                <p class="text">경희대학교 예술디자인대학 통합전시회 '결' 그 네번째 결 - '민낯'의 <b>특별 티셔츠</b>를 신청하세요! - 신청하러가기</p>
-                <p class="text">경희대학교 예술디자인대학 통합전시회 '결' 그 네번째 결 - '민낯'의 <b>특별 티셔츠</b>를 신청하세요! - 신청하러가기</p>
-                <p class="text">경희대학교 예술디자인대학 통합전시회 '결' 그 네번째 결 - '민낯'의 <b>특별 티셔츠</b>를 신청하세요! - 신청하러가기</p>
-            </div>
-
-        </div>
+    <header class="mainHeader light" include-html="/html/cmmn/header.html">
     </header>
 
-    </div>
     <div class="mainWrap">
 
         <main class="mainContainer withNotice">
@@ -116,21 +67,14 @@
             </a>
 
             <div id="curator-feed-default-feed-layout" style="margin-top: 20px;">
-            <script type="text/javascript">
-                (function () {
-                    var i, e, d = document, s = "script"; i = d.createElement("script"); i.async = 1;
-                    i.src = "https://cdn.curator.io/published/3a3a83e6-2097-4e08-ba96-43ca360d6cb3.js";
-                    e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e);
-                })();
-            </script>
+                <script type="text/javascript">
+                    (function () {
+                        var i, e, d = document, s = "script"; i = d.createElement("script"); i.async = 1;
+                        i.src = "https://cdn.curator.io/published/3a3a83e6-2097-4e08-ba96-43ca360d6cb3.js";
+                        e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e);
+                    })();
+                </script>
 
-            <!-- 
-            <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around;">
-                <div style="width: calc(100%/4); height: 240px;"></div>
-                <div style="width: calc(100%/4); height: 240px;"></div>
-                <div style="width: calc(100%/4); height: 240px;"></div>
-                <div style="width: calc(100%/4); height: 240px;"></div>
-            </div> -->
         </main>
 
         <canvas id="bg-animation"></canvas>
@@ -142,241 +86,11 @@
 
 
     </div>
-    <footer class="mainFooter">
-        <div class="footer-container">
-            <p><b style="font-weight: 700;">B4MBOO STUDIO</b>
-            </p>
-            <!-- <p>
-                    <b>당신의 기쁜 날을 축하드립니다.</b>
-                </p> -->
-            <p><b>주소 :</b> 경기도 수원시 영통구</p>
-            <p>
-                사업자 대표 : <b>정태훈</b>
-            </p>
-            <p>©Copyright 2021 B4MBOO STUDIO. ALL RIGHTS RESERVED</p>
-        </div>
-    </footer>
+    <footer include-html="/html/cmmn/footer.html"></footer>
 </body>
 
-<script>
-
-    $('#btnMenu').click(function () {
-        $('.menuWrap').toggleClass('none');
-
-    });
-
-    $('.mainBanner').hover(function () {
-        $('header').toggleClass('invert');
-    });
-
-    $('.menu-inner-container li').click(function () {
-        alert('준비 중 입니다.');
-    })
-
-        (function () {
-
-            var width, height, canvas, ctx, points, target, animateHeader = true;
-            var colorRGB = 128;
-
-            // Main
-            initHeader();
-            initAnimation();
-            addListeners();
-
-            function initHeader() {
-                width = window.innerWidth;
-                height = window.innerHeight;
-                target = { x: width / 2, y: height / 2 };
-
-
-                canvas = document.getElementById('bg-animation');
-                canvas.width = width;
-                canvas.height = height;
-                ctx = canvas.getContext('2d');
-
-                // create points
-                points = [];
-                for (var x = 0; x < width; x = x + width / 20) {
-                    for (var y = 0; y < height; y = y + height / 20) {
-                        var px = x + Math.random() * width / 20;
-                        var py = y + Math.random() * height / 20;
-                        var p = { x: px, originX: px, y: py, originY: py };
-                        points.push(p);
-                    }
-                }
-
-                // for each point find the 5 closest points
-                for (var i = 0; i < points.length; i++) {
-                    var closest = [];
-                    var p1 = points[i];
-                    for (var j = 0; j < points.length; j++) {
-                        var p2 = points[j]
-                        if (!(p1 == p2)) {
-                            var placed = false;
-                            for (var k = 0; k < 5; k++) {
-                                if (!placed) {
-                                    if (closest[k] == undefined) {
-                                        closest[k] = p2;
-                                        placed = true;
-                                    }
-                                }
-                            }
-
-                            for (var k = 0; k < 5; k++) {
-                                if (!placed) {
-                                    if (getDistance(p1, p2) < getDistance(p1, closest[k])) {
-                                        closest[k] = p2;
-                                        placed = true;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    p1.closest = closest;
-                }
-
-                // assign a circle to each point
-                for (var i in points) {
-                    var c = new Circle(points[i], 2 + Math.random() * 2, 'rgba(255,255,255,0.3)');
-                    points[i].circle = c;
-                }
-            }
-
-            // Event handling
-            function addListeners() {
-                if (!('ontouchstart' in window)) {
-                    window.addEventListener('mousemove', mouseMove);
-                }
-                window.addEventListener('scroll', scrollCheck);
-                window.addEventListener('resize', resize);
-            }
-
-            function mouseMove(e) {
-                var posx = posy = 0;
-                if (e.pageX || e.pageY) {
-                    posx = e.pageX;
-                    posy = e.pageY - $(window).scrollTop();
-                    absolutePosy = e.pageY;
-                }
-                else if (e.clientX || e.clientY) {
-                    posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-                    posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
-                }
-
-                target.x = posx;
-                target.y = posy;
-
-                if ($('body').hasClass('single-iaa_programs')) {
-                    if (absolutePosy > 800) {
-                        colorRGB = 128;
-                    } else {
-                        colorRGB = 255;
-                    }
-                } else if ($('body').hasClass('page-template-default')) {
-                    if (absolutePosy > 600) {
-                        colorRGB = 128;
-                    } else {
-                        colorRGB = 255;
-                    }
-                }
-            }
-
-            function scrollCheck() {
-
-            }
-
-            function resize() {
-
-                width = window.innerWidth;
-                height = window.innerHeight;
-                ctx.canvas.width = width;
-                ctx.canvas.height = height;
-
-            }
-
-            // animation
-            function initAnimation() {
-                animate();
-                for (var i in points) {
-                    shiftPoint(points[i]);
-                }
-            }
-
-            function animate() {
-                if (animateHeader) {
-                    ctx.clearRect(0, 0, width, height);
-                    for (var i in points) {
-                        // detect points in range
-                        if (Math.abs(getDistance(target, points[i])) < 4000) {
-                            points[i].active = 0.3;
-                            points[i].circle.active = 0.6;
-                        } else if (Math.abs(getDistance(target, points[i])) < 20000) {
-                            points[i].active = 0.1;
-                            points[i].circle.active = 0.3;
-                        } else if (Math.abs(getDistance(target, points[i])) < 40000) {
-                            points[i].active = 0.02;
-                            points[i].circle.active = 0.1;
-                        } else {
-                            points[i].active = 0;
-                            points[i].circle.active = 0;
-                        }
-
-                        drawLines(points[i]);
-                        points[i].circle.draw();
-                    }
-                }
-                requestAnimationFrame(animate);
-            }
-
-            function shiftPoint(p) {
-                TweenLite.to(p, 1 + 1 * Math.random(), {
-                    x: p.originX - 50 + Math.random() * 100,
-                    y: p.originY - 50 + Math.random() * 100, ease: Circ.easeInOut,
-                    onComplete: function () {
-                        shiftPoint(p);
-                    }
-                });
-            }
-
-            // Canvas manipulation
-            function drawLines(p) {
-                if (!p.active) return;
-                for (var i in p.closest) {
-                    ctx.beginPath();
-                    ctx.moveTo(p.x, p.y);
-                    ctx.lineTo(p.closest[i].x, p.closest[i].y);
-                    ctx.strokeStyle = 'rgba(' + colorRGB + ',' + colorRGB + ',' + colorRGB + ',' + p.active + ')';
-                    //            ctx.strokeStyle = 'rgba(156,217,249,'+ p.active+')';
-                    ctx.stroke();
-                }
-            }
-
-            function Circle(pos, rad, color) {
-                var _this = this;
-
-                // constructor
-                (function () {
-                    _this.pos = pos || null;
-                    _this.radius = rad || null;
-                    _this.color = color || null;
-                })();
-
-                this.draw = function () {
-                    if (!_this.active) return;
-                    ctx.beginPath();
-                    ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
-                    ctx.fillStyle = 'rgba(' + colorRGB + ',' + colorRGB + ',' + colorRGB + ',' + _this.active + ')';
-                    ctx.fill();
-                };
-            }
-
-            // Util
-            function getDistance(p1, p2) {
-                return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
-            }
-
-        })();
-</script>
-
+<script src="/script/background.js"></script>
+<script src="/script/header.js"></script>
+<script src="/script/index.js"></script>
 
 </html>
