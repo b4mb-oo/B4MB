@@ -273,6 +273,13 @@ textarea {
   transition: background-color 25ms, filter 25ms;
 }
 
+#btnMenu.is-active {
+  background-color: #e88d3d !important;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 .mainHeader > .header-container > ul > a {
   width: 100%;
   height: 100%;
@@ -400,7 +407,7 @@ textarea {
 }
 
 .menuWrap > .menu-container > .menu-inner-container > ul {
-  background-color: #000;
+  /* background-color: #000; */
 }
 
 .menuWrap > .menu-container > .menu-inner-container > ul > li,
@@ -511,7 +518,7 @@ textarea {
       #f2f4f8,
       rgba(255, 255, 255, 0.95)
     ),
-    url("./src/logo.png");
+    url("/src/b4mb-logo.svg");
   background-size: 72px;
   background-repeat: round;
 }
