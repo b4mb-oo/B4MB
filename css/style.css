@@ -200,6 +200,14 @@ textarea {
   font-size: 7px;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+.bolder {
+  font-weight: 900;
+}
+
 /* 헤더 */
 .mainHeader {
   position: fixed;
@@ -459,6 +467,11 @@ textarea {
 
 .mainContainer {
   padding-top: 60px;
+}
+
+.mainContainer.noSidePadding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .mainContainer.withNotice {
@@ -1008,9 +1021,21 @@ body#naked .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background: #fff !important;
 }
 
+.mainContainer.withNotice#contactForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainContainer.withNotice#contactForm > div {
+  width: 100%;
+  margin: 12px 0;
+}
+
 @media screen and (max-width: 480px) {
   .mainContainer {
     padding-top: 60px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .mainContainer.withNotice {
@@ -1079,5 +1104,9 @@ body#naked .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 
   body#naked .swiper-slide .content-container#nkdLeemiru > .artwork > canvas{
     max-width: none;
+  }
+
+  .mainContainer.withNotice#contactForm {
+    display: block;
   }
 }
