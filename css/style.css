@@ -539,7 +539,7 @@ textarea {
   margin-right: 32px;
   position: sticky;
   top: 92px;
-  max-width: 640px;
+  max-width: 840px;
 }
 
 /* .swiper-container {
@@ -876,16 +876,33 @@ textarea {
 .modalWrap > .confirm-modal > ul {
   padding-top: 16px;
   padding-bottom: 16px;
+  width: 100%;
 }
 
 .modalWrap > .confirm-modal > ul > li.flex {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+  width: 100%;
 }
 
 .modalWrap > .confirm-modal > ul > li.flex > .subtitle {
   margin-right: 8px;
   min-width: 82px;
-  text-align: center;
+  text-align: left;
+  font-weight: 900;
+}
+
+.modalWrap > .confirm-modal > ul > li.flex > .text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.modalWrap > .confirm-modal#pay > ul > li.flex > .paybutton {
+  width: 100%;
+  border: none;
+}
+
+.modalWrap > .confirm-modal#pay > ul > li.flex > .paybutton:hover {
+  filter: brightness(0.8);
 }
 
 .modalWrap > .confirm-modal > .button-container > .paybutton.invert {

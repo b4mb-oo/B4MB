@@ -104,9 +104,9 @@ $(function () {
       }
     });
 
-    if (isValid == false) {
-      alert("필수 입력 칸을 모두 입력해주세요.");
-    } else {
+    // if (isValid == false) {
+    //   alert("필수 입력 칸을 모두 입력해주세요.");
+    // } else {
       $inputname = $("#input-name").val();
       $inputemail = $("#input-email").val();
       $inputsize = $("#input-size").val();
@@ -131,7 +131,7 @@ $(function () {
       $req = $("#val-req").text($inputreq);
 
       $(".modalWrap").fadeIn("fast").css("display", "flex");
-    }
+    // }
   });
 
   $("#false").click(function () {

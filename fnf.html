@@ -179,7 +179,7 @@
 
         </main>
         <div class="modalWrap">
-            <div class="confirm-modal">
+            <div class="confirm-modal" id="confirm">
                 <div class="title-container">
                     <p class="title">주문정보 확인</p>
                     <p class="text">입력하신 정보가 맞는지 다시한번 확인 부탁드립니다.</p>
@@ -212,8 +212,27 @@
                 </ul>
                 <div class="flex button-container" style="width: 100%;">
                     <button class="paybutton invert" id="false">입력한 정보와 다릅니다.</button>
-                    <button id="confirmPay" class="paybutton" onclick="$('#form-submit').trigger('click');">입력한 정보가
+                    <button id="confirmField" class="paybutton" onclick="$('#form-submit').trigger('click');">입력한 정보가
                         맞습니다.</button>
+                </div>
+            </div>
+
+            <div class="confirm-modal" id="pay">
+                <div class="title-container">
+                    <p class="title">25,900원을 결제합니다.</p>
+                    <p class="text">결제를 진행합니다.</p>
+                </div>
+                <ul>
+                    <li class="flex">
+                        <button class="paybutton" style="background-color: #ffdf00; color: #1d1c24;">카카오페이로 결제</button>
+                    </li>
+                    <li class="flex">
+                        <button class="paybutton" style="background-color: #0052ff;">토스로 결제</button>
+                    </li>
+                </ul>
+                <div class="flex button-container" style="width: 100%;">
+                    <button class="paybutton invert" id="false">돌아가기</button>
+                    <button id="confirmPay" class="paybutton" onclick="$('#form-submit').trigger('click');">결제완료</button>
                 </div>
             </div>
         </div>
@@ -236,148 +255,13 @@
 
 <script src="/script/background.js"></script>
 <script src="/script/header.js"></script>
+<script src="/script/fnf.js"></script>
 
 
 
 <script>(function (d, s, id) { var js; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript"));</script>
-<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<script>
-    // var swiper = new Swiper('.swiper-container', {
-    //     loop: true,
-    //     navigation: {
-    //         nextEl: '.swiper-button-next',
-    //         prevEl: '.swiper-button-prev',
-
-    //     },
-    // });
-
-    var swiper = new Swiper(".mySwiper", {
-        // loop: true,
-        spaceBetween: 10,
-        slidesPerView: 6,
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-        loop: true,
-        spaceBetween: 10,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-            swiper: swiper,
-        },
-    });
-
-    $(function () {
-
-        $('#pay-submit').click(function () {
-
-            var isValid;
-            $("input").each(function () {
-                var element = $(this);
-                if (element.val() == "") {
-                    isValid = false;
-                }
-            });
-
-
-            if (isValid == false) {
-                alert('필수 입력 칸을 모두 입력해주세요.')
-            } else {
-                $inputname = $('#input-name').val();
-                $inputemail = $('#input-email').val();
-                $inputsize = $('#input-size').val();
-                $inputphone = $('#input-phone').val();
-                $inputaddress = $('#delivery_address').val() + ", " + $('#delivery_detailAddress').val() + ", " + $('#delivery_extraAddress').val() + ", " + $('#delivery_postcode').val();
-                $inputreq = $('#input-requirement').val();
-
-                $('#input-address').val($inputaddress);
-
-                $name = $('#val-name').text($inputname);
-                $email = $('#val-email').text($inputemail);
-                $size = $('#val-size').text($inputsize);
-                $phone = $('#val-phone').text($inputphone);
-                $address = $('#val-address').text($inputaddress);
-                $req = $('#val-req').text($inputreq);
-
-                $('.modalWrap').fadeIn('fast').css('display', 'flex');
-            }
-
-        });
-
-        $('#false').click(function () {
-            $('.modalWrap').fadeOut('fast');
-        });
-
-        $('#input-phone').keyup(function (event) {
-            event = event || window.event;
-            var _val = this.value.trim();
-            this.value = autoHypenTel(_val);
-        });
-
-        function autoHypenTel(str) {
-            str = str.replace(/[^0-9]/g, '');
-            var tmp = '';
-
-            if (str.substring(0, 2) == 02) {
-                // 서울 전화번호일 경우 10자리까지만 나타나고 그 이상의 자리수는 자동삭제
-                if (str.length < 3) {
-                    return str;
-                } else if (str.length < 6) {
-                    tmp += str.substr(0, 2);
-                    tmp += '-';
-                    tmp += str.substr(2);
-                    return tmp;
-                } else if (str.length < 10) {
-                    tmp += str.substr(0, 2);
-                    tmp += '-';
-                    tmp += str.substr(2, 3);
-                    tmp += '-';
-                    tmp += str.substr(5);
-                    return tmp;
-                } else {
-                    tmp += str.substr(0, 2);
-                    tmp += '-';
-                    tmp += str.substr(2, 4);
-                    tmp += '-';
-                    tmp += str.substr(6, 4);
-                    return tmp;
-                }
-            } else {
-                // 핸드폰 및 다른 지역 전화번호 일 경우
-                if (str.length < 4) {
-                    return str;
-                } else if (str.length < 7) {
-                    tmp += str.substr(0, 3);
-                    tmp += '-';
-                    tmp += str.substr(3);
-                    return tmp;
-                } else if (str.length < 11) {
-                    tmp += str.substr(0, 3);
-                    tmp += '-';
-                    tmp += str.substr(3, 3);
-                    tmp += '-';
-                    tmp += str.substr(6);
-                    return tmp;
-                } else {
-                    tmp += str.substr(0, 3);
-                    tmp += '-';
-                    tmp += str.substr(3, 4);
-                    tmp += '-';
-                    tmp += str.substr(7);
-                    return tmp;
-                }
-            }
-
-            return str;
-        }
-    });
-</script>
 
 </html>
