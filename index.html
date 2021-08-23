@@ -49,18 +49,51 @@
 
         <main class="mainContainer withNotice noSidePadding">
 
-            <a href="naked.html">
-                <div class="mainBanner" style="background-image: url('https://i.gifer.com/2RNq.gif');">
-                    <div>
-                        <p class="title"><b>경희대학교 예술디자인대학 통합전시회
-                                '결'</b><br>
-                            그 네번째 결 - '민낯' 보기
+            <a href="https://marpple.shop/kr/b4mb">
+                <div class="mainBanner">
+                    <div class="clip">
+                        <p class="title">B4MB Celebrate T-shirts<br>
+                            마플샵 바로가기 →
                         </p>
 
-                        <p class="text">18th ~ 26th August, 2021<br>@6 Seocho-daero 70-gil, Seocho-dong, Seocho-gu,
-                            Seoul
+                        <p class="text" style="letter-spacing: 0;">B4MB의 활동들을 기념하는 티셔츠를 준비했습니다.<br>지금 마플샵에서 확인해보세요!<br>
                         </p>
                     </div>
+
+                    <!-- Swiper -->
+                    <div class="swiper-container bannerSwiper" style="height: 100%; padding: 0;">
+                        <div class="swiper-wrapper" style="height: 100%;">
+                            <div class="swiper-slide"><img src="./assets/21ss/1.jpg"/></div>
+                            <div class="swiper-slide"><img src="./assets/21ss/2.jpg"/></div>
+                            <div class="swiper-slide"><img src="./assets/21ss/3.jpg"/></div>
+                            <div class="swiper-slide"><img src="./assets/21ss/4.jpg"/></div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <!-- Swiper JS -->
+                    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper(".bannerSwiper", {
+                            spaceBetween: 0,
+                            centeredSlides: true,
+                            autoplay: {
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            },
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                        });
+                    </script>
 
                 </div>
             </a>
@@ -87,6 +120,7 @@
     </div>
     <footer include-html="/html/cmmn/footer.html"></footer>
 </body>
+
 
 <script src="/script/background.js"></script>
 <script src="/script/header.js"></script>

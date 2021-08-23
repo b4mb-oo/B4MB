@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  $(".mainBanner").hover(function () {
-    $("header").toggleClass("invert");
-  });
+  // $(".mainBanner").hover(function () {
+  //   $("header").toggleClass("invert");
+  // });
 
 
 (function () {
