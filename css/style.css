@@ -365,6 +365,7 @@ textarea {
   font-size: 14px;
   animation: noticeMove infinite linear 30s;
   margin-right: 24px;
+  text
 }
 
 @keyframes noticeMove {
@@ -509,7 +510,7 @@ textarea {
   color: #fff;
   padding: 8px;
   backdrop-filter: blur(30px) brightness(80%);
-  -webkit-backdrop-filter: blur(30px) brightness(120%);
+  -webkit-backdrop-filter: blur(30px) brightness(80%);
 }
 
 /* .mainBanner:hover {
