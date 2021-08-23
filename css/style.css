@@ -354,6 +354,7 @@ textarea {
   width: 100%;
   overflow: hidden;
   display: flex;
+  font-size: 14px;
   height: 32px;
   align-items: center;
   justify-content: center;
