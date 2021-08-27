@@ -42,7 +42,7 @@
 <body>
     <header class="mainHeader light" include-html="/html/cmmn/header.html">
     </header>
-    
+
     <div class="mainWrap">
 
         <main class="mainContainer" style="padding-left: 12px; padding-right: 12px;">
@@ -72,6 +72,29 @@
                             <div class="swiper-slide"><img src="/src/thumb/hoodie-back.jpg" alt="티셔츠" /></div>
                         </div>
                     </div>
+
+                    <!-- Swiper JS -->
+                    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper(".mySwiper", {
+                          spaceBetween: 10,
+                          slidesPerView: 4,
+                          freeMode: true,
+                          watchSlidesProgress: true,
+                        });
+                        var swiper2 = new Swiper(".mySwiper2", {
+                          spaceBetween: 10,
+                          navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                          },
+                          thumbs: {
+                            swiper: swiper,
+                          },
+                        });
+                      </script>
                 </div>
                 <div class="content">
                     <p class="product title">B4MB Hoodie Black </p>
@@ -231,7 +254,8 @@
                 </ul>
                 <div class="flex button-container" style="width: 100%;">
                     <button class="paybutton invert" id="false">돌아가기</button>
-                    <button id="confirmPay" class="paybutton" onclick="$('#form-submit').trigger('click');">결제완료</button>
+                    <button id="confirmPay" class="paybutton"
+                        onclick="$('#form-submit').trigger('click');">결제완료</button>
                 </div>
             </div>
         </div>
